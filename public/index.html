@@ -64,16 +64,18 @@
   </main>
 
   <footer class="site-footer">
-    <h2>Get Free Tips To Rank Higher On Google</h2>
-    <!-- Replace YOUR_NEWSLETTER_FORM_ID the same way as above. -->
-    <form class="newsletter" action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID" method="POST">
-      <label class="sr">Email<input type="email" name="email" placeholder="Email" required autocomplete="email"></label>
-      <button type="submit">Subscribe</button>
-    </form>
-    <p class="legal">
-      &copy; 2026, <a href="/">Grant's Results</a>
-      &middot; <a href="/privacy-policy.html">Privacy policy</a>
-    </p>
+    <div class="footer-top">
+      <h2>Get Free Tips To Rank Higher On Google</h2>
+      <!-- Replace YOUR_NEWSLETTER_FORM_ID the same way as above. -->
+      <form class="newsletter" action="https://formspree.io/f/YOUR_NEWSLETTER_FORM_ID" method="POST">
+        <label class="sr" for="nl-email">Email</label>
+        <input id="nl-email" type="email" name="email" placeholder="Email" required autocomplete="email">
+        <button type="submit" aria-label="Subscribe">&rarr;</button>
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <p class="legal">&copy; 2026, <a href="/">Grant's Results</a><span class="dot">&middot;</span><a href="/privacy-policy.html">Privacy policy</a></p>
+    </div>
   </footer>
 </body>
 </html>

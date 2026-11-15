@@ -65,19 +65,24 @@ a { color: inherit; }
 .contact button:hover { opacity: .88; }
 @media (max-width: 600px) { .contact form { grid-template-columns: 1fr; } .contact .half { grid-column: 1 / -1; } }
 
-.site-footer { background: var(--accent); color: #fff; text-align: center; padding: 56px 24px; }
-.site-footer h2 { margin: 0 0 24px; font-size: 1.6rem; font-weight: 700; }
-.newsletter { display: flex; gap: 0; max-width: 480px; margin: 0 auto 36px; }
-.newsletter label { flex: 1; display: block; }
+.site-footer { background: var(--accent); color: #fff; }
+.footer-top { text-align: center; padding: 56px 24px 52px; }
+.site-footer h2 { margin: 0 0 24px; font-size: 1.55rem; font-weight: 700; }
+.newsletter { position: relative; max-width: 360px; margin: 0 auto; }
 .newsletter input {
-  display: block; width: 100%; font-family: Assistant, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: 1rem; letter-spacing: .06em;
-  color: #fff; background: transparent; border: 1px solid #e6e2d6; border-right: 0; border-radius: 0; padding: 14px 20px;
+  display: block; width: 100%; font-family: Assistant, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: 1.05rem; letter-spacing: .06em;
+  color: #fff; background: transparent; border: 1px solid #fff; border-radius: 0; padding: 14px 52px 14px 20px;
 }
-.newsletter input::placeholder { color: #cfcbbf; opacity: 1; }
+.newsletter input::placeholder { color: #d0d3d8; opacity: 1; }
+.newsletter input:focus { outline: 2px solid #fff; outline-offset: 2px; }
 .newsletter button {
-  font-family: Assistant, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: 1rem; letter-spacing: .08em;
-  background: #dcdad0; color: #111820; border: 0; border-radius: 0; padding: 14px 28px; cursor: pointer;
+  position: absolute; top: 1px; right: 1px; bottom: 1px; width: 48px; padding: 0;
+  background: transparent; color: #fff; border: 0; font-size: 1.2rem; cursor: pointer;
 }
-.legal { font-size: .85rem; margin: 0; color: #d6d9de; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding: 40px max(24px, calc((100% - 1100px) / 2)) 48px; }
+.legal { margin: 0; font-family: Assistant, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; font-size: .8rem; letter-spacing: .03em; color: #d6d9de; }
+.legal a { text-decoration: none; }
+.legal a:hover { text-decoration: underline; }
+.legal .dot { margin: 0 10px; }
 
 .policy { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
