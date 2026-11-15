@@ -80,7 +80,7 @@ a { color: inherit; }
   background: transparent; color: #fff; border: 0; font-size: 1.2rem; cursor: pointer;
 }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,.12); padding: 40px max(24px, calc((100% - 1100px) / 2)) 48px; }
-.contact-us { margin: 0 0 32px; font-family: Assistant, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
+.contact-us { margin: 0; font-family: Assistant, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; }
 .contact-us h3 { margin: 0 0 10px; font-family: Lora, Georgia, serif; font-size: 1.15rem; font-weight: 700; color: #fff; }
 .contact-us p { margin: 4px 0; font-size: .95rem; letter-spacing: .03em; color: #d6d9de; }
 .contact-us .cu-label { font-weight: 600; color: #fff; }
